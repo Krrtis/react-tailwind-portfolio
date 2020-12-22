@@ -1,7 +1,6 @@
 import NavBar from './NavBar';
 import Hero from './Hero';
 import Footer from './Footer';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
