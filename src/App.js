@@ -16,27 +16,27 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className={`App ${this.state.darkMode ? 'dark' : ''}`}>
-				<header>
+			<div className={`${this.state.darkMode ? 'dark' : ''}`}>
+				<header className="bg-white dark:bg-dark-900">
 					<nav>
 						<NavBar toggleDarkMode={this.toggleDarkMode} />
 					</nav>
 				</header>
-				<main>
+				<main className="bg-white dark:bg-dark-900">
 					<section id="hero">
 						<Hero />
 					</section>
 					<section id="main">
 						<div className="container mx-auto px-6 p-10">
-							<h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+							<h2 className="text-4xl font-bold text-center text-gray-800 dark:text-dark-primarytext mb-8">
 								Header
 							</h2>
 							<div className="flex items-center flex-wrap mb-20">
 								<div className="w-full md:w-1/2">
-									<h4 className="text-3xl text-gray-800 font-bold mb-3">
+									<h4 className="text-3xl text-gray-800 dark:text-dark-primarytext font-bold mb-3">
 										A subheader
 									</h4>
-									<p className="text-gray-600 mb-8">
+									<p className="text-gray-600 dark:text-dark-secondarytext mb-8">
 										information for the subheader
 									</p>
 								</div>
@@ -50,10 +50,10 @@ class App extends React.Component {
 									<p>insert an image here</p>
 								</div>
 								<div className="w-full md:w-1/2">
-									<h4 className="text-3xl text-gray-800 font-bold mb-3">
+									<h4 className="text-3xl text-gray-800 dark:text-dark-primarytext font-bold mb-3">
 										Second subheader
 									</h4>
-									<p className="text-gray-600 mb-8">
+									<p className="text-gray-600 dark:text-dark-secondarytext mb-8">
 										yay for a second subheader paragraph
 									</p>
 								</div>
@@ -61,10 +61,10 @@ class App extends React.Component {
 
 							<div className="flex items-center flex-wrap mb-20">
 								<div className="w-full md:w-1/2">
-									<h4 className="text-3xl text-gray-800 font-bold mb-3">
+									<h4 className="text-3xl text-gray-800 dark:text-dark-primarytext dark font-bold mb-3">
 										Third and final subheader
 									</h4>
-									<p className="text-gray-600 mb-8">
+									<p className="text-gray-600 dark:text-dark-secondarytext mb-8">
 										this is the last section paragraph, woo
 									</p>
 								</div>
@@ -75,7 +75,7 @@ class App extends React.Component {
 						</div>
 					</section>
 				</main>
-				<footer>
+				<footer className="bg-light-900 dark:bg-dark-900">
 					<Footer />
 				</footer>
 			</div>
